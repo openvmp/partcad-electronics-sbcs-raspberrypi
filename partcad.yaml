@@ -1,0 +1,7 @@
+parts:
+  rpi4b:
+    type: step
+    desc: Raspberry Pi 4 Model B
+    vendor: raspberry-pi
+    sku: PI4-8GB
+    url: https://www.canakit.com/raspberry-pi-4-8gb.html?cid=usd&src=raspberrypi
