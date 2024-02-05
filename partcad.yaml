@@ -1,3 +1,5 @@
+desc: Raspberry Pi
+url: https://www.raspberrypi.com/
 parts:
   rpi4b:
     type: step
