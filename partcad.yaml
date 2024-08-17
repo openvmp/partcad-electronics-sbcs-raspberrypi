@@ -4,7 +4,7 @@ url: https://www.raspberrypi.com/
 
 import:
   pub:
-    inRootOnly: True
+    onlyInRoot: True
     type: git
     url: https://github.com/openvmp/partcad-index.git
 
