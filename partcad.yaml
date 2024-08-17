@@ -1,5 +1,13 @@
+name: /pub/electronics/sbcs/raspberrypi
 desc: Raspberry Pi
 url: https://www.raspberrypi.com/
+
+import:
+  pub:
+    inRootOnly: True
+    type: git
+    url: https://github.com/openvmp/partcad-index.git
+
 parts:
   rpi4b:
     type: step
@@ -7,3 +15,17 @@ parts:
     vendor: raspberry-pi
     sku: PI4-8GB
     url: https://www.canakit.com/raspberry-pi-4-8gb.html?cid=usd&src=raspberrypi
+    implements:
+      "/pub/std/metric/m:m2.5-thru":
+        top-back-left: [[3.5, 52.5, 1.5], [1, 0, 0], 180]
+        top-back-right: [[61.5, 52.5, 1.5], [1, 0, 0], 180]
+        top-front-left: [[3.5, 3.5, 1.5], [1, 0, 0], 180]
+        top-front-right: [[61.5, 3.5, 1.5], [1, 0, 0], 180]
+        bottom-back-left: [[3.5, 52.5, 0], [1, 0, 0], 0]
+        bottom-back-right: [[61.5, 52.5, 0], [1, 0, 0], 0]
+        bottom-front-left: [[3.5, 3.5, 0], [1, 0, 0], 0]
+        bottom-front-right: [[61.5, 3.5, 0], [1, 0, 0], 0]
+
+render:
+  svg:
+  readme:
