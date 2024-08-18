@@ -25,6 +25,11 @@ parts:
         bottom-back-right: [[61.5, 52.5, 0], [1, 0, 0], 0]
         bottom-front-left: [[3.5, 3.5, 0], [1, 0, 0], 0]
         bottom-front-right: [[61.5, 3.5, 0], [1, 0, 0], 0]
+    ports:
+      corner-bottom-back-left: [[0, 56, 0], [0, 0, 1], 270]
+      corner-bottom-back-right: [[85, 56, 0], [0, 0, 1], 180]
+      corner-bottom-front-left: [[0, 0, 0], [0, 0, 1], 0]
+      corner-bottom-front-right: [[85, 0, 0], [0, 0, 1], 90]
 
 render:
   svg:
