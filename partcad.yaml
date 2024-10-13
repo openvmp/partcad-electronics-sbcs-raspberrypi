@@ -30,6 +30,22 @@ parts:
       corner-bottom-back-right: [[85, 56, 0], [0, 0, 1], 180]
       corner-bottom-front-left: [[0, 0, 0], [0, 0, 1], 0]
       corner-bottom-front-right: [[85, 0, 0], [0, 0, 1], 90]
+  rpi-touchscreen:
+    # TODO: this is an assembly in fact 
+    # (shield + adapter + stand-offs/screws + connector)
+    type: step
+    path: shields/rpi-touchscreen.step
+    desc: Raspberry Pi 7" Touchscreen Display
+    vendor: raspberry-pi
+    sku: RSP-DISPLAY
+    url: https://www.canakit.com/raspberry-pi-lcd-display-touchscreen.html?cid=usd&src=raspberrypi    
+    implements:
+      # TODO: hole depth not known so far
+      "/pub/std/metric/m:m2.5-threaded-hole-9":   
+        top-back-left: [[-22.5, 21.0, 21.76], [1, 0, 0], 180]
+        top-back-right: [[35.5, 21.0, 21.76], [1, 0, 0], 180]
+        top-front-left: [[-22.5, -28.0, 21.76], [1, 0, 0], 180]
+        top-front-right: [[35.5, -28.0, 21.76], [1, 0, 0], 180]
 
 render:
   svg:
