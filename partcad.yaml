@@ -1,6 +1,8 @@
 name: /pub/electronics/sbcs/raspberrypi
 desc: Raspberry Pi
 url: https://www.raspberrypi.com/
+cover:
+  part: rpi4b
 
 import:
   pub:
